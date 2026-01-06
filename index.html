@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WorkFLowHp </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ================= HERO / HEADER ================= -->
+    <header class="relative h-[75vh] flex items-center overflow-hidden">
+
+        <!-- BACKGROUND IMAGE -->
+        <div class="absolute inset-0 bg-cover bg-left"
+            style="background-image:url('https://cdn.pixabay.com/photo/2020/05/14/02/07/office-5169618_1280.jpg');">
+        </div>
+
+        <!-- DARK OVERLAY -->
+        <div class="absolute inset-0 bg-slate-900/70"></div>
+
+        <!-- CONTENT -->
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+            <div class="grid md:grid-cols-2 items-center gap-12">
+
+                <!-- LEFT CONTENT -->
+                <div class="text-left text-white">
+                    <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg"
+                        class="w-14 rounded-full mb-6">
+
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Start HP Printer Setup
+                    </h1>
+
+                    <p class="text-gray-300 mb-10 max-w-md">
+                        Install drivers, fix errors & complete your printer setup
+                        with expert assistance.
+                    </p>
+
+                    <!-- BUTTONS SIDE BY SIDE -->
+                    <div class="flex flex-wrap gap-4">
+
+                        <!-- START SETUP -->
+                        <a href="start-setup.html">
+                            <button class="bg-blue-600 hover:bg-blue-700 transition
+                     text-white px-8 py-3 rounded-full font-semibold shadow-lg
+                     active:scale-95">
+                                🚀 Start Setup
+                            </button>
+                        </a>
+
+                        <!-- CALL SUPPORT -->
+                        <button onclick="openSupportChat()" class="bg-white/90 text-blue-600 border border-white
+                   hover:bg-blue-600 hover:text-white
+                   transition px-8 py-3 rounded-full font-semibold shadow-lg
+                   active:scale-95">
+                            📞 +1-855-775-4304
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT EMPTY (IMAGE ALREADY IN BACKGROUND) -->
+                <div class="hidden md:block"></div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================= BREADCRUMB ================= -->
+    <section class="max-w-7xl mx-auto px-6 mt-10 mb-6">
+        <p class="text-gray-500 text-sm">Home / Shop</p>
+        <h2 class="text-3xl font-bold mt-2">Shop</h2>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+
+        <!-- PRODUCT GRID -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        </div>
+
+        <!-- ================= PAGINATION ================= -->
+        <nav class="flex justify-center mt-14 space-x-3" id="pagination"></nav>
+
+    </section>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-14">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">
+                        Need Help Setting Up Your Printer?
+                    </h2>
+                    <p class="text-blue-100 max-w-md">
+                        Facing installation errors, driver issues, or connectivity problems?
+                        Our printer experts are available 24/7 to assist you instantly.
+                    </p>
+                </div>
+
+                <!-- RIGHT CTA -->
+                <div class="flex flex-col sm:flex-row gap-4 md:justify-end">
+
+                    <a href="start-setup.html">
+                        <button class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold
+                   hover:bg-gray-100 transition shadow-lg">
+                            🚀 Start Setup
+                        </button>
+                    </a>
+
+                    <a href="tel:+18557754304">
+                        <button class="bg-blue-600 border border-white/40
+                   hover:bg-blue-500 transition
+                   px-8 py-3 rounded-full font-semibold shadow-lg">
+                            📞 Call Now: +1-855-775-4304
+                        </button>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-gray-300 px-6 py-14">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Disclaimer</h3>
+                <p class="text-sm leading-relaxed">
+                    All information is provided as-is. Use products at your own risk.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Contact</h3>
+                <p onclick="openSupportChat()" class="text-sm cursor-pointer ">📞 +1-877-868-1718</p>
+                <p class="text-sm">✉ info@WorkFLow.online</p>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-500 text-sm mt-12">
+            © 2026 WorkFLow. All rights reserved.
+        </p>
+    </footer>
+    <script>
+
+
+
+        function openSupportChat() {
+            window.location.href = "tel:+1-855-775-4304";
+        }
+        // ================= PRODUCT DATA =================
+        const products = [
+            {
+                img: "./products/1.jpg",
+                title: "WorkFLow-22 SP100 Black Toner Cartridge",
+                old: "₹ 3,650",
+                price: "₹ 1,149"
+            },
+            {
+                img: "./products/2.jpg",
+                title: "WorkFLow WiFi Colour Printer",
+                old: "₹ 6,833",
+                price: "₹ 5,499"
+            },
+            {
+                img: "./products/3.jpg",
+                title: "WorkFLow Color Printer All-in-One",
+                old: "₹ 4,900",
+                price: "₹ 4,499"
+            },
+            {
+                img: "./products/4.jpg",
+                title: "WorkFLow 152A Black Toner",
+                old: "₹ 4,500",
+                price: "₹ 2,149"
+            },
+            {
+                img: "./products/5.jpg",
+                title: "WorkFLow 210KEV Toner Cartridge",
+                old: "₹ 3,550",
+                price: "₹ 1,049"
+            },
+            {
+                img: "./products/6.jpg",
+                title: "WorkFLow 303 Black Toner",
+                old: "",
+                price: "₹ 849"
+            },
+            {
+                img: "./products/7.jpg",
+                title: "WorkFLow GT52/53 Ink Bottle Set",
+                old: "₹ 2,750",
+                price: "₹ 2,230"
+            },
+            {
+                img: "./products/8.jpg",
+                title: "WorkFLow GT53 Black Ink Bottle",
+                old: "₹ 770",
+                price: "₹ 416"
+            },
+            {
+                img: "./products/9.jpg",
+                title: "WorkFLow GI-790 Ink Bottle Set",
+                old: "₹ 2,544",
+                price: "₹ 2,099"
+            },
+            {
+                img: "./products/10.jpg",
+                title: "WorkFLow Refillable Ink Tank Set",
+                old: "₹ 2,250",
+                price: "₹ 1,620"
+            },
+            {
+                img: "./products/11.jpg",
+                title: "WorkFLow Automatic Duplex Laser Printer",
+                old: "₹ 22,365",
+                price: "₹ 16,299"
+            },
+            {
+                img: "./products/12.jpg",
+                title: "WorkFLow All-in-One Printer",
+                old: "₹ 4,589",
+                price: "₹ 4,199"
+            }
+        ];
+
+        // ================= PAGINATION LOGIC =================
+        const itemsPerPage = 8;
+        let currentPage = 1;
+
+        function renderProducts() {
+            const grid = document.getElementById("productGrid");
+            grid.innerHTML = "";
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = products.slice(start, end);
+
+            pageItems.forEach(p => {
+                grid.innerHTML += `
+        <article class="bg-white border rounded-xl p-5 relative hover:shadow-xl transition group">
+          <span class="absolute top-3 right-3 text-xs bg-blue-600 text-white px-2 py-1 rounded">
+            SALE
+          </span>
+          <img src="${p.img}" loading="lazy"
+            class="mx-auto h-36 w-full object-contain mb-4 group-hover:scale-105 transition" />
+          <h3 class="text-sm font-semibold text-blue-600 mb-2">
+            ${p.title}
+          </h3>
+          <div class="flex gap-2 text-sm">
+            ${p.old ? `<span class="line-through text-gray-400">${p.old}</span>` : ""}
+            <span class="font-bold">${p.price}</span>
+          </div>
+        </article>
+      `;
+            });
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(products.length / itemsPerPage);
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `
+        <button onclick="goToPage(${i})"
+          class="w-10 h-10 rounded-lg ${i === currentPage
+                        ? "bg-blue-600 text-white"
+                        : "border hover:bg-gray-200"} font-semibold">
+          ${i}
+        </button>
+      `;
+            }
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            renderProducts();
+            renderPagination();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        // INIT
+        renderProducts();
+        renderPagination();
+    </script>
+</body>
+
+</html>
